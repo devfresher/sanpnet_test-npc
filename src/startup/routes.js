@@ -6,6 +6,8 @@ import apiAuthRouter from "../routes/api/auth.js"
 import apiStateRouter from "../routes/api/states.js"
 import apiLgaRouter from "../routes/api/lgas.js"
 import apiWardRouter from "../routes/api/wards.js"
+import apiCitizenRouter from "../routes/api/citizens.js"
+
 
 import ResponseMiddleware from "../middleware/response.js"
 
@@ -19,6 +21,7 @@ const routeApp = function (app) {
 	app.use("/api/states", apiStateRouter)
     app.use("/api/lgas", apiLgaRouter)
     app.use("/api/wards", apiWardRouter)
+    app.use("/api/citizens", apiCitizenRouter)
 
 	// Web Routes
 	// app.use("/login", authRouter)
