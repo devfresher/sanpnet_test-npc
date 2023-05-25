@@ -1,4 +1,4 @@
-import { Joi } from "../routes/utils/joi.js"
+import { Joi } from "../utils/joi.js"
 import AuthService from "../services/AuthService.js"
 
 export default class AuthController {

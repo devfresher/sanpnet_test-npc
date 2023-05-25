@@ -1,6 +1,6 @@
 import jwt from "jsonwebtoken"
-import { config } from "../../utils/config.js"
-import UserService from "../../services/UserService.js"
+import { config } from "../utils/config.js"
+import UserService from "../services/UserService.js"
 
 export default class AuthMiddleware {
 	static authenticateToken() {
