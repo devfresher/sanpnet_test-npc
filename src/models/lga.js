@@ -6,7 +6,7 @@ const lgaSchema = new mongoose.Schema({
 		type: String,
 		required: true,
 	},
-	stateId: {
+	state: {
 		type: mongoose.Schema.Types.ObjectId,
 		ref: "State",
 		required: true,

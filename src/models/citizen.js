@@ -19,7 +19,7 @@ const citizenSchema = new mongoose.Schema({
 		type: String,
 		required: true,
 	},
-	wardId: {
+	ward: {
 		type: mongoose.Schema.Types.ObjectId,
 		ref: "Ward",
 		required: true,

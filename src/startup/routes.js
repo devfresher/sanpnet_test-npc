@@ -4,6 +4,7 @@ import helmet from "helmet"
 
 import apiAuthRouter from "../routes/api/auth.js"
 import apiStateRouter from "../routes/api/states.js"
+import apiLgaRouter from "../routes/api/lgas.js"
 
 import ResponseMiddleware from "../middleware/response.js"
 
@@ -15,6 +16,7 @@ const routeApp = function (app) {
 	// API Routes
 	app.use("/api/auth", apiAuthRouter)
 	app.use("/api/states", apiStateRouter)
+    app.use("/api/lgas", apiLgaRouter)
 
 	// Web Routes
 	// app.use("/login", authRouter)

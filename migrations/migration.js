@@ -1,5 +1,8 @@
 import bcrypt from "bcryptjs"
 import { connectDB } from "../src/startup/db.js"
+import logger from "../src/startup/logger.js"
+
+logger()
 connectDB()
 
 import { LGA } from "../src/models/lga.js"
@@ -22,7 +25,7 @@ async function createRecords() {
 		const lgas = []
 		for (let i = 0; i < 10; i++) {
 			for (let j = 0; j < 10; j++) {
-				const lga = new LGA({ name: `LGA ${j + 1}`, stateId: states[i]._id })
+				const lga = new LGA({ name: `LGA ${j + 1}`, state: states[i]._id })
 				lgas.push(lga)
 			}
 		}
@@ -32,7 +35,7 @@ async function createRecords() {
 		const wards = []
 		for (let i = 0; i < 100; i++) {
 			for (let j = 0; j < 10; j++) {
-				const ward = new Ward({ name: `Ward ${j + 1}`, lgaId: lgas[i]._id })
+				const ward = new Ward({ name: `Ward ${j + 1}`, lga: lgas[i]._id })
 				wards.push(ward)
 			}
 		}
@@ -40,14 +43,14 @@ async function createRecords() {
 
 		// // Create 10 citizens for each ward
 		const citizens = []
-		for (let i = 0; i < 1000; i++) {
+		for (let i = 0; i < 5; i++) {
 			for (let j = 0; j < 10; j++) {
 				const citizen = new Citizen({
 					fullName: `Citizen ${j + 1}`,
 					gender: j % 2 === 0 ? "Male" : "Female",
 					address: `Address ${j + 1}`,
 					phone: `Phone ${j + 1}`,
-					wardId: wards[i]._id,
+					ward: wards[i]._id,
 				})
 				citizens.push(citizen)
 			}

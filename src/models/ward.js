@@ -6,7 +6,7 @@ const wardSchema = new mongoose.Schema({
 		type: String,
 		required: true,
 	},
-	lgaId: {
+	lga: {
 		type: mongoose.Schema.Types.ObjectId,
 		ref: "LGA",
 		required: true,
