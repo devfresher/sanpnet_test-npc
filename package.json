@@ -1,0 +1,11 @@
+{
+  "name": "npc_app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Usman Soliu",
+  "license": "ISC"
+}
