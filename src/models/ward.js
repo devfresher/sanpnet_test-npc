@@ -8,7 +8,7 @@ const wardSchema = new mongoose.Schema({
 	},
 	lga: {
 		type: mongoose.Schema.Types.ObjectId,
-		ref: "LGA",
+		ref: "Lga",
 		required: true,
 	},
 	createdAt: {
