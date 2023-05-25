@@ -1,11 +1,22 @@
 {
-  "name": "npc_app",
-  "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
-  "scripts": {
-    "test": "jest"
-  },
-  "author": "Usman Soliu",
-  "license": "ISC"
+	"name": "npc_app",
+	"version": "1.0.0",
+	"description": "",
+	"main": "src/app.js",
+	"type": "module",
+	"scripts": {
+		"test": "jest",
+		"migrate": "node ./migrations/migration.js"
+	},
+	"author": "Usman Soliu",
+	"license": "ISC",
+	"dependencies": {
+		"bcrypt": "^5.1.0",
+		"dotenv": "^16.0.3",
+		"express": "^4.18.2",
+		"mongoose": "^7.2.1"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.22"
+	}
 }
