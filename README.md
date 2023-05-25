@@ -6,12 +6,11 @@ This was a coding test attempted for a NodeJS Backend engineer role at Snapnet S
 
 1. Clone the repository:
 
-   ```shell
-   git clone "https://github.com/devfresher/sanpnet_test-npc.git"
+   ```git clone "https://github.com/devfresher/sanpnet_test-npc.git"```
 
 2. Install the dependencies:
 
-    ```npm install
+    ```npm install```
 
 3. Set up the configuration:
 
@@ -20,7 +19,7 @@ This was a coding test attempted for a NodeJS Backend engineer role at Snapnet S
 
 4. Start the application:
 
-    ```npm run dev
+    ```npm run dev```
 
 5. The application should now be running on <http://localhost:3000>.
 
@@ -30,7 +29,7 @@ This was a coding test attempted for a NodeJS Backend engineer role at Snapnet S
 ## Practical Case: 1 Migration
 
 1. Run Migrations
-    ```npm run migrate
+    ```npm run migrate```
 
 
 ## Contact
