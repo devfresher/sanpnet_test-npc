@@ -6,4 +6,5 @@ export const config = {
 	HOST: process.env.HOST,
 	PORT: process.env.PORT,
 	DB_URL: process.env.DB_URL,
+	JWT_PRIVATE_KEY: process.env.JWT_PRIVATE_KEY,
 }

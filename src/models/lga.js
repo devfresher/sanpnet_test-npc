@@ -1,4 +1,5 @@
-import mongoose from "../startup/db.js"
+import mongoose from "mongoose"
+import paginate from "mongoose-paginate-v2"
 
 const lgaSchema = new mongoose.Schema({
 	name: {
@@ -19,4 +20,5 @@ const lgaSchema = new mongoose.Schema({
 	},
 })
 
+lgaSchema.plugin(paginate)
 export const LGA = mongoose.model("Lga", lgaSchema)

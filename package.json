@@ -6,15 +6,24 @@
 	"type": "module",
 	"scripts": {
 		"test": "jest",
+		"dev": "nodemon src/app.js",
 		"migrate": "node ./migrations/migration.js"
 	},
 	"author": "Usman Soliu",
 	"license": "ISC",
 	"dependencies": {
-		"bcrypt": "^5.1.0",
+		"bcryptjs": "^2.4.3",
+		"cors": "^2.8.5",
 		"dotenv": "^16.0.3",
 		"express": "^4.18.2",
-		"mongoose": "^7.2.1"
+		"express-async-errors": "^3.1.1",
+		"helmet": "^7.0.0",
+		"joi": "^17.9.2",
+		"joi-objectid": "^4.0.2",
+		"jsonwebtoken": "^9.0.0",
+		"mongoose": "^7.2.1",
+		"mongoose-paginate-v2": "^1.7.1",
+		"winston": "^3.8.2"
 	},
 	"devDependencies": {
 		"nodemon": "^2.0.22"

@@ -1,4 +1,6 @@
-import bcrypt from "bcrypt"
+import bcrypt from "bcryptjs"
+import { connectDB } from "../src/startup/db.js"
+connectDB()
 
 import { LGA } from "../src/models/lga.js"
 import { State } from "../src/models/state.js"

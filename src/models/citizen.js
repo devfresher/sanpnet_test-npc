@@ -1,4 +1,5 @@
-import mongoose from "../startup/db.js"
+import mongoose from "mongoose"
+import paginate from "mongoose-paginate-v2"
 
 const citizenSchema = new mongoose.Schema({
 	fullName: {
@@ -32,4 +33,5 @@ const citizenSchema = new mongoose.Schema({
 	},
 })
 
+citizenSchema.plugin(paginate)
 export const Citizen = mongoose.model("Citizen", citizenSchema)

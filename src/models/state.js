@@ -1,4 +1,5 @@
-import mongoose from "../startup/db.js"
+import mongoose from "mongoose"
+import paginate from "mongoose-paginate-v2"
 
 const stateSchema = new mongoose.Schema({
 	name: {
@@ -14,4 +15,5 @@ const stateSchema = new mongoose.Schema({
 	},
 })
 
+stateSchema.plugin(paginate)
 export const State = mongoose.model("State", stateSchema)
